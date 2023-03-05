@@ -1,0 +1,7 @@
+import http_test.utils, codec.json as json, codec.base64.standard as base64
+
+var ifs = iostream.ifstream(context.cmd_args[1])
+var data = ifs.getline()
+
+var id = utils.http_post("http://127.0.0.1/backend/executor/facial_classification", "{\"img\":\"" + data + "\"}")
+system.out.println(id)

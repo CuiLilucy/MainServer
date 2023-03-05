@@ -1,0 +1,6 @@
+.ecs_output/
+__pycache__/
+images/
+.idea/
+logs/
+*.log
